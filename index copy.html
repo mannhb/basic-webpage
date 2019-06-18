@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HTML Basic structure -->
+    <!-- The true value of commenting and having clean code is that it is much more maintainable
+    and reduces the time for other programmers to understand. -->
+    <head>
+      <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+      This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+      You should include this line in the head of all of your webpages. -->
+      <title>Bobby's Notes</title>
+      <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to
+      your HTML (see Lesson 1.3) -->
+    </head>
+    <!-- Indentation: This is a very important habit to have because it makes your code much more
+    maintainable. -->
+    <body>
+      <section class="www">
+        <div class="wwwtext">
+            <h2>The World Wide Web</h2>
+            <img src="images/www.jpg" alt="world wide web">
+            <p>The web was created in the early 1990s and is estimated to be 30 billion
+            pages. The main components of the web are the <b>Internet</b>, a <b>browser</b>,
+            <b>servers</b>, and <b>HTTP</b>. HTTP is the main protocol of the web,
+            and servers are computers that host files on the web. The Internet is the
+            World's largest computer network, and a browser is a program that can display
+            files that are found on the web.  The browser, such as <em>Firefox</em>.
+            <em>Chrome</em>, <em>Safari</em>, <em>Edge</em>, or <em>Microsoft Explorer</em>,
+            makes requests via the HTTP protocol to display / render pages that are hosted
+            on servers.
+            </p>
+        </div>
+      </section>
+      <section class="htmlbasics">
+        <div class="introhtmltags">
+            <h2>The Basics of HTML</h2>
+            <h3>Introduction to HTML Tags</h3>
+            <img src="images/htmltags.png" class="round" alt="html tags pic">
+            <p>HTML is text content (what you see), markup (what it looks like), and any
+            references to images, videos, and links to other pages. To make HTML look
+            different, tags are used. The first tag is called the opening tag and consists
+            of the tag name enclosed by a less than symbol &#40;&lt;&#41; and a greater than
+            symbol &#40;&gt;&#41;. Then there are the contents, and on the other side is the
+            closing tag, which is made up of a less than symbol, a slash &#40;&#47;&#41;, the
+            tag name, and a greater than symbol. The whole structure is referred to as an
+            <em>element</em>. So, for example, a header one element will look something like
+            this: &lt;h1&gt;Your Header Here&lt;&#47;h1&gt;. There are other types of tags
+            such as the &lt;b&gt; tag, which can <b>bold</b> text, and the &lt;em&gt; tag, which
+            will display text in <em>italics</em>.
+            </p>
+        </div>
+      </section>
+      <section class="advhtmltags">
+        <div class="advhtmltagstext">
+            <h3>Advanced HTML Tags</h3>
+            <p>An HTML tag can contain an attribute. Attributes always equal a value.
+            Additionally, tags can have multiple attributes. An example of a tag that uses
+            an attribute is called the anchor tag. The anchor tag &lt;a&gt; can link a word or
+            a phrase to a webpage such as this: <a href="www.udacity.com">Udacity</a>. Displayed
+            in a browser, the word "Udacity" is linked to the Udacity homepage.
+            </p>
+        </div>
+        <div class="advhtmltagstext">
+            <p>Another advanced HTML tag is the image tag. The img tag structure
+            includes the source for the image in the form of an URL or a reference to a file
+            location. There is also an alt component of the tag that includes the text that
+            is displayed when the image doesn't load. So, if the URL doesn't exist, the text will
+            display instead. Also, this type of tag is called a <b>void</b> tag and has no ending
+            slash. It is void because it has no content.
+            </p>
+        </div>
+        <div class="space">
+            <p>There are a lot of details to remember about HTML. Fortunately, many resources
+            exist on the web. Some of these include the <em>Mozilla Developer Network</em>
+            and their section on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+            HTML</a>, and <em>W3Schools</em>, where one can find plenty of documents on
+            web development and <a href="https://www.w3schools.com/tags/">HTML tags</a>.
+            </p>
+            <span>Below is a brief selection of <em>HTML</em> and <em>Formatting</em>
+            tags for reference:
+            </span>
+        </div>
+        <div class="table">
+            <table>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>&lt;title&gt;</td>
+              <td>Specifies the title for a webpage</td>
+            </tr>
+            <tr>
+              <td>&lt;body&gt;</td>
+              <td>Specifies the body of the webpage</td>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;</td>
+              <td>Specifies the paragraph in a webpage</td>
+            </tr>
+            <tr>
+              <td>&lt;hr&gt;</td>
+              <td>Signifies a change in theme in a document</td>
+            </tr>
+            <tr>
+              <td>&lt;abbr&gt;</td>
+              <td>Specifies an abbreviation of an acronym</td>
+            </tr>
+            <tr>
+              <td>&lt;kbd&gt;</td>
+              <td>Specifies a keyboard input</td>
+            </tr>
+            <tr>
+  	           <td>&lt;small&gt;</td>
+               <td>Specifies smaller text</td>
+            </tr>
+            <tr>
+  	            <td>&lt;strong&gt;</td>
+                <td>Specifies important text</td>
+            </tr>
+            </table>
+        </div>
+      </section>
+      <section class="htmlpagestructure">
+        <div class="htmlpagestructuretext">
+            <h2>HTML Page Structure</h2>
+            <p>In HTML, text on multiples lines will render on a single line.  In order to
+            use multiple lines, there must be a line break. A line break is acheived by
+            using the break tag, and is a <em>void</em> tag. Another way to achieve a
+            line break is by using the paragraph tag. The paragraph tag is not considered
+            a void tag because it has content. When using the paragraph tag, there will
+            be a space between each paragraph.
+            </p>
+        </div>
+      </section>
+      <section class="inlineblock">
+        <div class="inlineblocktext">
+            <h3>Inline vs. Block Elements</h3>
+            <p>When writing text in HTML, there can be as many spaces as you'd like between
+            the words, but it will always render as a single space between each word. The
+            sames goes for text that is broken up over several lines; it will still render
+            on a single line. The break tag &lt;br&gt; is an inline tag. It ends a line and
+            everything that comes after will wrap to the next line. For example: <br>
+            <br>
+            Here is one line...<br>
+            And here is another line...<br>
+            <br>
+            On the other hand, the paragraph tag, which also forces a line break, creates
+            an invisible box that has <em>height</em> and <em>width</em>. Some examples of
+            inline elements are the bold tag, the emphasis tag, and the image tag.
+            </p>
+            <p>Two additional elements are the span tag and div tag. The span element creates
+            inline container, whereas the div element creates a box container. Attributes
+            can be added to each of these elements. A type of attribute that can be added
+            to each is <em>class</em>, which is <b>CSS</b>. CSS dictates the style of the
+            resulting HTML page. The inline elments include span, a, br, img, and strong. Some
+            block elements are div, p, and form.
+            </p>
+        </div>
+      </section>
+      <section class="htmldocs">
+        <div class="htmldocstext">
+            <h3>HTML Documents</h3>
+            <p>HTML documents can be quite complex in their markup. The head section, which
+            contains the title, can also include <em>meta-data</em>, <em>JavaScript</em>,
+            and <em>CSS</em>. The body tag contains the actual content of the page. The
+            majority of this course will focus on what is between the body tags.
+            </p>
+        </div>
+      </section>
+      <section class="cssstyle">
+        <div class="cssstyletext">
+            <h2>CSS Style</h2>
+            <h3>The Basics of CSS</h3>
+            <img src="images/css.png" class="round" alt="css pic">
+            <p>CSS (Cascading Style Sheets) is used to style HTML. Using the following analogy,
+            HTML can be thought of as the structure of a house, such as its walls. Style would
+            then be the color of the paint used on the walls or the type of flooring used
+            throughout the house. Additionally, JavaScript is the functionality of a webpage,
+            so using the house analogy, it would be something like a garage door opener or a
+            remote control for the television.
+            </p>
+            <p>When writing CSS, a <em>Selector</em> must first be chosen. Basically, when
+            a selector is indicated in the code, all of the rules written for it will be applied
+            in the HTML document. So, if h1 is chosen as the selector and the CSS rules indicate
+            that the background color is black and the text color is blue, this will apply to
+            all h1 elements.
+            </p>
+            <span>Here are some important CSS definitions:</span>
+            <ul>
+              <li>The <b>Rule</b> is the CSS code that describes the value an attribute should
+              take.</li>
+              <li>The <b>Property</b> is what you want to change.</li>
+              <li>The <b>Value</b> is what is assigned to the attribute.</li>
+              <li>The <b>Selector</b> is a name chosen by the programmer to target elements that
+              are assigned to an id attribute or a class in HTML.</li>
+              <li>The <b>Class</b> is a group of elements that can be styled together. When using
+              Class names, there should be no periods or any other punctuation marks.</li>
+              <li>The <b>ID</b> is a unique identifier for an element in the HTML document.</li>
+            </ul>
+        </div>
+      </section>
+      <section class="advcsstopics">
+        <div class="advcsstopicstext">
+            <h3>Advanced CSS Topics</h3>
+            <p>In the example above, the CSS rule was applied to every header in the HTML doc.
+            what do we do if we only want to apply certain rules to certain h1's? To answer this
+            question, class selectors must be used. When a class is selected in HTML, it allows the
+            programmer to specifically target that class, or portion of the HTML doc, for specific
+            CSS styling rules. This allows for greater flexibility in styling a HTML document.
+            </p>
+            <span>There are three ways that CSS can be added to HTML:</span>
+            <ol>
+              <li>Add a &lt;head&gt; element and include a &lt;style&gt; element. In the &lt;style&gt;
+              element, write the CSS code for the document.</li>
+              <li>Write the CSS code inline with the HTML. This is regarded as the worst option.
+              It is bad because the programmer will have to write a lot of repeated code, and
+              when code is repeatedly written, it can lead to mistakes.</li>
+              <li>Write a separate CSS file and link it to the HTML file. This is regarded as best
+              method to include style because it allows the programmer to stay organized.</li>
+            </ol>
+            <img src="images/csstohtml.jpg" class="small" alt="csstohtml pic">
+            <p>It is important to note that if a programmer choses to write a separate CSS file and
+            link it to the HTML file, then both files (and any images) must be contained within the
+            same master project folder. Lastly, check your HTML and CSS files with the
+            <a href="https://validator.w3.org">HTML validator</a> and the
+            <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a> to make sure the code is
+            written correctly!
+            </p>
+       </div>
+      </section>
+      <section class="theboxmodel">
+         <div class="space">
+             <h3>The Box Model</h3>
+             <p>Everything on a webpage is composed of boxes. However, before these boxes can be
+             positioned and/or re-shaped on a webpage, it is first helpful to understand the box
+             model.
+             </p>
+             <img src="images/theboxmodel.png" class="small" alt="theboxmodel pic">
+         </div>
+         <div>
+             <span>The box is made of up four components:</span>
+             <ol>
+               <li><b>Content</b>: Image or text that appears on the webpage. The layers that surround
+               it can be viewed as protection, so boxes do not sit too close to each other.</li>
+               <li><b>Padding</b>: Clears an area around the content.</li>
+               <li><b>Border</b>: Goes around the padding and content.</li>
+               <li><b>Margin</b>: Clears an area around the border. The margin does not have a
+               background color. It is completely transparent because it exists as the space between
+               boxes.</li>
+             </ol>
+             <p>The size of the box is equal to the border, padding, and content widths. Additionally,
+             box sizes can be set as pixels or as percentages. If the box size is set as a percentage,
+             the box size will change depending on the size of the webpage. This will not happen if
+             the box size is set in pixels.  The box size will remain the same size as the webpage
+             changes. This can lead to a bad user experience.
+             </p>
+             <p>Moving boxes around is probably one of the most difficult tasks in CSS. One way this
+             can be achieved is by using the <em>flex box</em> method. This is an efficient way to
+             distribute space among the lines in a container, or div. Adding "display: flex" to the
+             appropriate CSS will display divs next to each other.
+             </p>
+        </div>
+     </section>
+     <footer>
+        <p>Designed by: Bobby Mann<br>
+        Contact Information: <a href="mannhb@gmail.com">mannhb@gmail.com</a>
+        </p>
+     </footer>
+    </body>
+</html>
